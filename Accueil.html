@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Accueil</title>
+		<link rel="stylesheet" href="Acc.css"/>
+		<script text="text/javascript" src="jquery.js"></script>
+	</head>
+	
+	<body>
+		<header>
+		<ul>
+			<div class=dh><li class=lih><a id="Acc" href=""><span class="NameSite">2PointsP</span><img id="Logo"src="logo.png" alt="2pointsP"/></a> </div>
+			<script>
+			var Dep1 = function(){
+				$(document).ready(function(){
+					$("#Logo").hover(function(){
+						$(".Cent1").stop();
+						$(".Cent2").stop();
+						$(".NameSite").stop();
+						$(".NameSite").animate({left:"69", opacity:"1"}, 300);
+						$(".Cent1").animate({left:"167"}, 300);
+						$(".Cent2").animate({left:"353"}, 300);
+						}, function(){
+						$(".Cent1").stop();
+						$(".Cent2").stop();
+						$(".NameSite").stop();
+						$(".NameSite").animate({left:"5", opacity:"0"}, 300);
+						$(".Cent1").animate({left:"70"}, 300);
+						$(".Cent2").animate({left:"256"}, 300);
+					});
+				});
+			};
+			Dep1();
+			</script></li>
+			<li class=Cent1> <a id="Div" href="">Divertissement</a> 
+			<script>
+			var Dep2 = function(){
+				$(document).ready(function(){
+					$(".Cent1").hover(function(){
+						$(".Cent2").stop();
+						$(".Cent2").animate({left:"352"}, 300);
+					},function(){
+						$(".Cent2").stop();
+						$(".Cent2").animate({left:"255"}, 300);
+					});
+			});
+			};
+			Dep2();
+			</script></li>
+			<li class=Cent2> <a id="Etu" href="">Etude</a></li>
+			<li class=Cent3> <span id="Cxn">Connexion</span></li>
+		</ul>
+		</header>
+		
+		<section>
+		
+			<div id="Def">
+				<img class="img1" src="img1.png" />
+				<img class="img2" src="img2.png" />
+				<img class="img3" src="img3.png" />
+			</div>
+			
+			<aside id=Cent4>
+				<table>
+					<tr>
+						<td>Email :</td>
+						<td><input type="email" placeholder="example@gmail.com"/></td>
+					</tr>
+					<tr>
+						<td>Mot de passe :</td>
+						<td><input type="password" placeholder=""/></td>
+					</tr>
+					<tr>
+						<td colspan=2 align=center><button>Se connecter</button></td>
+					</tr>
+				</table>
+			</aside>
+			<script>
+				var Dep3 = function(){
+				$(document).ready(function(){
+					$(".Cent3").hover(function(){
+						$("#Cent4").slideDown(300);
+						$("#Ins").stop().animate({top:"+=50"},300);
+						$("#Cent4").focus(function(){$("#Cent4").slideDown(300);});
+					}, function(){
+						$("#Cent4").stop().slideUp(300);
+						$("#Ins").stop().animate({top:"20%"},300);
+					});
+				});
+				};
+				Dep3();
+			</script>
+			<aside id="Ins">
+				<table>
+					<tr><td id="OngI" class="" bgcolor=green><a><b>Inscription</b></a></td><td id="OngC" class="Selected" bgcolor=green><a><b>Connexion</b></a></td></tr>
+					<tr id="Ong1">
+						<form>
+							<td colspan=2>
+								<table>
+									<tr><td align=center width=70px>Pseudo</td><td><input class="Ch" type="text" placeholder="AsheTM"/></td></tr>
+									<tr><td align=center width=70px>Mot de passe</td><td><input class="Ch" type="password"/></td></tr>
+									<tr><td align=center width=70px>Vérification du Mot de passe</td><td><input class="Ch" type="password"/></td></tr>
+									<tr><td align=center width=70px>Email</td><td><input class="Ch" type="email" placeholder="example@gmail.com"/></td></tr>
+									<tr><td align=center colspan=2 align=center><input type="submit" value="S'inscrire"/></td></tr>
+								</table>
+							</td>
+						</form>
+					</tr>
+				</table>
+			</aside>
+			
+			<script>
+				function Onglet(){
+					$("#Ins").hover(function(){
+						$("#Ins").css({opacity:"1"});
+					},function(){
+						$("#Ins").css({opacity:"0.5"});
+					});
+				}
+				Onglet();
+			</script>
+			
+			<aside id="APr">
+				<table>
+					<tr bgcolor=green><td><b>A PROPOS</b></td></tr>
+					<tr><td>Notre site consiste à donner des cours ainsi que quelque divertissement comme film, anime etc ...</td></tr>
+				</table>
+			</aside>
+		</section>
+		
+		<footer>
+			<p> Copyright &copy; </p>
+		</footer>
+	</body>
+</html>

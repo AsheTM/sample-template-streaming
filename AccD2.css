@@ -1,0 +1,123 @@
+.Contenu2{ 
+	width:100%;
+	z-index:7;
+	height:93%;
+	position:absolute;
+	bottom:-100%;
+	right:0.1%;
+}
+/* #BTN{
+	display:none;
+	position:fixed;
+	top:100px;
+	right:80px;
+}
+.BTN1,.BTN2,.BTN3{
+	block
+	 text-align:center;
+	width:150px;
+	padding:20px;
+	background-color:rgb(112,233,31);
+} */
+#MB1{
+	display:none;
+	z-index:7;
+	position:fixed;
+	top:120px;
+	right:50px;
+	width:50px;
+	height:50px;
+	background-color:rgb(112,233,31);
+	border-radius:100%;
+	box-shadow: 10px 10px 30px black;
+	transition: transform 0.1s ease-in-out;
+}
+#MB1 img{
+	position:relative;
+	top:12px;
+	left:10px;
+	width:30px;
+	height:24px;
+}
+#MB1:hover{
+	transform:scale(1.2);
+}
+#MB1:active{
+	transform:scale(1);
+}
+.DF1{
+	position:relative;
+	display:inline-block;
+	float:right;
+	width:20%;
+	height:100%;
+	overflow-y:hidden;
+	z-index:8;
+}
+.DF1 a{
+	text-decoration:none;
+	color:white;
+	display:inline-block;
+	
+}
+#BTN1{
+	position:fixed;
+	right:0px;
+	display:none;
+	background-color:yellow;
+	height:100%;
+	width:200px;
+	z-index:9;
+	overflow:scroll;
+}
+#BTN1 li{
+	display:inline;
+}
+/* #scrollBar{
+	position:fixed;
+	right:0px;
+	display:inline-block;
+	background-color:black;
+	opacity:0.7;
+	width:10px;
+	height:350px;
+	border-radius:25px;
+} */
+.FilmCategorie{
+	width:200px;
+	height:200px;
+	background-color:green;
+	display:block;
+}
+.FilmCategorieFooter{
+	width:200px;
+	height:35px;
+	background-color:green;
+	display:block;
+}
+.T{
+	font-family:Police;
+	position:relative;
+	left:100px;
+	top:75px;
+	font-size:96px;
+	color:black;
+	text-shadow: 15px 5px 15px;
+}
+.Trailer{
+	position:relative;
+	top:75px;
+	left:150px;
+}
+.Trailer video{/*iframe*/
+	width:500px;
+}
+.DS1{
+	background-color:white;
+	
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-size:100% 100%;
+	height:100%;
+	width:100%;
+}

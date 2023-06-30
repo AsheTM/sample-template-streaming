@@ -1,0 +1,25 @@
+@media screen and (max-width:1100px){
+@keyframes SSR{
+	0%{text-shadow:30px 30px 10px;right:0px;}
+	100%{text-shadow:10px 20px 5px;right:75px;}
+}
+@keyframes SSL{
+	0%{text-shadow:30px 30px 10px;left:0px;}
+	100%{text-shadow:50px 20px 5px;left:75px;}
+}
+#SS1,#SS2,#SS3{
+	position:relative;
+	animation-duration:3s;
+	animation-timing-function:ease;
+}
+#SS3{
+	animation-name:SSR;
+	text-shadow:10px 20px 5px;
+	right:75px;
+}
+#SS1{
+	animation-name:SSL;
+	text-shadow:50px 20px 5px;
+	left:75px;
+}
+}
